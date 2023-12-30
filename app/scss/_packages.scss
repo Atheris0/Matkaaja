@@ -57,7 +57,19 @@
     }
     &__description {
         font-size: 0.8125rem;
-        padding-bottom: 1.5625rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    &__buttons {
+        display: inline-block;
+        padding: 0.625rem;
+        
+        a {
+            color: $white;
+            display: block;
+            text-align: center;
+        }
     }
 
 }
