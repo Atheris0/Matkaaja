@@ -10,7 +10,7 @@
     
     &__image {
         position: relative;
-        background-image: url(/matkaaja/images/img_nature_wide.jpg); //img will be changed
+        //background-image: url(/images/img_nature_wide.jpg); //img will be changed
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -33,12 +33,12 @@
                 content: "";
                 position: absolute;
                 height: 100%;
-                background-image: url(/images/bg-intro-desktop.svg); //img will come here
+                background-image: url(/images/img_nature_wide.jpg); //img will come here
                 background-repeat: no-repeat;
                 background-position: center bottom;
-                width: 150%;
+                width: 120%;
                 background-size: 122%;
-                background-position: 0% 83%;
+                background-position: 0% 50%;
             }
         }
         &::after {
@@ -46,7 +46,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            background-image: url(/images/image-mockups.png); //img will come here
+            background-image: url(/images/img_snow_wide.jpg); //img will come here
             background-size: 93%;
             background-repeat: no-repeat;
             background-position: center bottom;

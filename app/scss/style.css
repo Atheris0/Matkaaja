@@ -754,7 +754,6 @@ button:hover::before,
 }
 .aboutus__image {
   position: relative;
-  background-image: url(/matkaaja/images/img_nature_wide.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -779,12 +778,12 @@ button:hover::before,
     content: "";
     position: absolute;
     height: 100%;
-    background-image: url(/images/bg-intro-desktop.svg);
+    background-image: url(/images/img_nature_wide.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    width: 150%;
+    width: 120%;
     background-size: 122%;
-    background-position: 0% 83%;
+    background-position: 0% 50%;
   }
 }
 .aboutus__image::after {
@@ -792,7 +791,7 @@ button:hover::before,
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(/images/image-mockups.png);
+  background-image: url(/images/img_snow_wide.jpg);
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
