@@ -240,6 +240,60 @@ button:hover::before,
   }
 }
 
+.booking {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.booking .heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.booking .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.booking .form-field {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+}
+
+.booking .label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 150px;
+}
+
+.booking .input-field {
+  flex: 1;
+  padding: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+.booking .submit-button {
+  background-color: #eb4c6c;
+  display: block;
+  margin: auto; /* Center the button */
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .header {
   position: relative;
   z-index: 1;
