@@ -407,7 +407,6 @@ button:hover::before,
 }
 .hero__image {
   position: relative;
-  background-image: url(/images/bg-intro-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -432,7 +431,6 @@ button:hover::before,
     content: "";
     position: absolute;
     height: 100%;
-    background-image: url(/images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
     width: 150%;
@@ -445,7 +443,6 @@ button:hover::before,
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(/images/image-mockups.png);
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -823,6 +820,7 @@ button:hover::before,
   .aboutus__image {
     flex: 3;
     order: 2;
+    height: 41rem;
     background-image: none;
   }
 }
@@ -831,6 +829,7 @@ button:hover::before,
     content: "";
     position: absolute;
     height: 100%;
+    background-image: url(/images/img_nature_wide.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     width: 120%;
@@ -843,6 +842,7 @@ button:hover::before,
   position: absolute;
   height: 100%;
   width: 100%;
+  background-image: url(/images/img_snow_wide.jpg);
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;

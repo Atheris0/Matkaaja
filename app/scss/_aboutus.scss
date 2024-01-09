@@ -24,7 +24,7 @@
         @include breakpoint-up(large){ 
             flex: 3;
             order: 2;
-            //height: 41rem;
+            height: 41rem;
             background-image: none;
         }
         &::before {
@@ -33,7 +33,7 @@
                 content: "";
                 position: absolute;
                 height: 100%;
-                //background-image: url(/images/img_nature_wide.jpg); //img will come here
+                background-image: url(/images/img_nature_wide.jpg); //img will come here
                 background-repeat: no-repeat;
                 background-position: center bottom;
                 width: 120%;
@@ -46,7 +46,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            //background-image: url(/images/img_snow_wide.jpg); //img will come here
+            background-image: url(/images/img_snow_wide.jpg); //img will come here
             background-size: 93%;
             background-repeat: no-repeat;
             background-position: center bottom;
