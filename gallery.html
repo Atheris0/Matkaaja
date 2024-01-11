@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app/scss/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="app/js/searchscript.js" defer></script>
 </head>
 <body>
 
@@ -36,7 +36,7 @@
         </div>
       </header>
   <section class="searching">
-    <div class="searching">
+    <div class="searching container container--pall">
       <div class="form-container">
         <!-- Search Bar -->
         <div class="form-field">
@@ -48,7 +48,22 @@
       </div>
     </div>
   </section>
-  
+  <section class="gallery">
+    <div class="gallery__content container container--pall">
+      <h2>Gallery</h2>
+  <div class="gallery__grid" data-user-cards-container>
+    <!-- user card template goes here -->
+    <template data-user-template>
+      <div class="gallery__item">
+        <div class="gallery__image">
+          <img class="gallery__image" data-image-url />
+        </div>
+        <div class="gallery__text" data-header></div>
+      </div>
+    </template>
+  </div>
+</div>
+  </section>
 
   <footer class="footer">
     <div class="container">

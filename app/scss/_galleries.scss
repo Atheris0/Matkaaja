@@ -1,0 +1,74 @@
+.galleries {
+    background-color: $veryLightGray;
+}
+
+.gallery {
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr); //create a layout that has 2 colums each will have same unit
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr); 
+        }
+    }
+    &__item {
+        border-radius: 0.3125rem;
+        overflow: hidden;
+        background-color: $white;
+    }
+    
+    &__image {
+        height: 12.5rem;
+        background-size: cover; //it'll take entire div
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__text {
+        
+        padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+        color: $grayishBlue;
+
+        @include breakpoint-up(medium){
+            padding: 1.875rem 1.5625rem;
+        }
+
+    }
+
+    &__author {
+        font-size: 0.625rem;
+        margin-bottom: 0.75rem;
+    }
+    &__title {
+        display: inline-block;
+        font-size: 1.0625rem;
+        line-height: 1.2rem;
+        color: $darkBlue;
+        margin-bottom: 0.5rem;
+        transition: all 150ms ease-in-out;
+        &:hover{
+            color: $limeGreen;
+        }
+    }
+    &__description {
+        font-size: 0.8125rem;
+        padding-bottom: 0.5rem;
+        text-align: center; 
+    }
+
+    &__buttons {
+        display: inline-block;
+        padding: 0.625rem;
+        
+        a {
+            color: $white;
+            display: block;
+            text-align: center;
+        }
+    }
+}
