@@ -254,11 +254,49 @@ button,
   background-color: #eb4c6c;
   display: block;
   margin: auto; /* Center the button */
-    padding: 10px;    
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  padding: 10px;    
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
   
+}
+
+// Search bar properties
+
+.searching {
+  padding: 20px;
+}
+
+.searching .form-container {
+  display: flex;
+}
+
+.searching .form-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searching .label {
+  display: block;
+  font-weight: bold;
+  width: 70px;
+}
+
+.searching .input-field {
+  padding: 5px;
+  outline: none;
+}
+
+.searching .submit-button {
+  background-color: #eb4c6c;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

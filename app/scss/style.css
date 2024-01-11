@@ -294,6 +294,42 @@ button:hover::before,
   font-size: 16px;
 }
 
+.searching {
+  padding: 20px;
+}
+
+.searching .form-container {
+  display: flex;
+}
+
+.searching .form-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searching .label {
+  display: block;
+  font-weight: bold;
+  width: 70px;
+}
+
+.searching .input-field {
+  padding: 5px;
+  outline: none;
+}
+
+.searching .submit-button {
+  background-color: #eb4c6c;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -587,6 +623,10 @@ button:hover::before,
 }
 .feature__icon {
   margin-bottom: 1.875rem;
+}
+.feature__icon img {
+  max-width: 72px;
+  max-height: 72px;
 }
 @media (min-width: 64em) {
   .feature__icon {
