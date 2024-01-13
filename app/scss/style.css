@@ -73,7 +73,7 @@ h1, h2, h3 {
   margin-top: 0;
   font-weight: 300;
   line-height: 1.15;
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
 }
 
 h1 {
@@ -331,6 +331,10 @@ button:hover::before,
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -351,7 +355,7 @@ button:hover::before,
   bottom: 0;
   left: 0;
   opacity: 0;
-  background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+  background-image: linear-gradient(hsl(266, 26%, 24%), transparent);
 }
 .header nav {
   position: relative;
@@ -371,7 +375,7 @@ button:hover::before,
   display: block;
   width: 26px;
   height: 2px;
-  background-color: hsl(233, 26%, 24%);
+  background-color: hsl(266, 26%, 24%);
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
@@ -390,7 +394,7 @@ button:hover::before,
 }
 .header__menu a {
   display: block;
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
   padding: 0.625rem;
   text-align: center;
   text-transform: uppercase;
@@ -418,7 +422,7 @@ button:hover::before,
   transition: opacity 300ms ease-in-out;
 }
 .header__links a:hover {
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
 }
 .header__links a:hover::before {
   opacity: 1;
@@ -637,7 +641,7 @@ button:hover::before,
 .feature__title {
   font-weight: 300;
   line-height: 1.15;
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -703,7 +707,7 @@ button:hover::before,
   display: inline-block;
   font-size: 1.0625rem;
   line-height: 1.2rem;
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
   margin-bottom: 0.5rem;
   transition: all 150ms ease-in-out;
 }
@@ -715,7 +719,7 @@ button:hover::before,
 }
 
 .footer {
-  background-color: hsl(233, 26%, 24%);
+  background-color: hsl(266, 26%, 24%);
   color: hsl(0, 0%, 100%);
   padding: 2.5rem;
   text-align: center;
@@ -955,7 +959,7 @@ button:hover::before,
   display: inline-block;
   font-size: 1.0625rem;
   line-height: 1.2rem;
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
   margin-bottom: 0.5rem;
   transition: all 150ms ease-in-out;
 }
@@ -1024,7 +1028,7 @@ button:hover::before,
   display: inline-block;
   font-size: 1.0625rem;
   line-height: 1.2rem;
-  color: hsl(233, 26%, 24%);
+  color: hsl(266, 26%, 24%);
   margin-bottom: 0.5rem;
   transition: all 150ms ease-in-out;
 }
