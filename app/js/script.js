@@ -5,8 +5,6 @@ const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
 btnHamburger.addEventListener('click', function(){
-    //console.log('open burger');
-
     if(header.classList.contains('open')){  // close burger menu
         body.classList.remove('noscroll');
         header.classList.remove('open');
@@ -23,6 +21,5 @@ btnHamburger.addEventListener('click', function(){
         element.classList.add('fade-in');
         element.classList.remove('fade-out');
         })
-
     }
 });

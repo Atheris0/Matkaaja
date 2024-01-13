@@ -1,13 +1,13 @@
-//selectors for the galleries
 const userCardTemplate = document.querySelector('[data-user-template]')
 const userCardContainer = document.querySelector('[data-user-cards-container]')
-const searchForm = document.querySelector('.form-field');
+const searchForm = document.getElementById('searchForm');
 const searchInput = document.querySelector('[data-search]');
 
 let users = [];
 
 function performSearch() {
     const value = searchInput.value.toLowerCase();
+    console.log('Search Value:', value);
 
     users.forEach(user => {
         const isVisible = user.text.toLowerCase().includes(value);
@@ -20,9 +20,7 @@ function performSearch() {
     });
 }
 
-searchInput.addEventListener('input', performSearch);
-
-// Event listener of the form
+// Event listener of the form for submit event
 searchForm.addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the default form submission behavior
     performSearch();
