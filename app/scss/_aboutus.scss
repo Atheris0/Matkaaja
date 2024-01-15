@@ -1,76 +1,40 @@
 .aboutus {
     background-color: $veryLightGray;
-
-    .container {
-        @include breakpoint-up(large){
-            display: flex;
-            align-items: center;
-        }
-    }
-    
-    &__image {
-        position: relative;
-        //background-image: url(/images/img_nature_wide.jpg); //img will be changed
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 17.5rem;
-
-        @include breakpoint-up(medium){
-            min-height: 25rem;
-            background-position: center 70%;
-        }
-
-        @include breakpoint-up(large){ 
-            flex: 3;
-            order: 2;
-            height: 41rem;
-            background-image: none;
-        }
-        &::before {
-
-            @include breakpoint-up(large){
-                content: "";
-                position: absolute;
-                height: 100%;
-                background-image: url(/images/img_nature_wide.jpg); //img will come here
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                width: 120%;
-                background-size: 122%;
-                background-position: 0% 50%;
-            }
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-image: url(/images/img_snow_wide.jpg); //img will come here
-            background-size: 93%;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-
-            @include breakpoint-up(large){
-                width: 120%;
-                height: 122%;
-                background-size: 94%;
-                background-position: center 150%;
-                left: 22%;
-            }
-            
-        }
-
-        
-    }
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  
     &__text {
-        text-align: center;
-
-        @include breakpoint-up(large){
-            flex: 2;
-            order: 1;
-            text-align: left;
-        }
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+  
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
     }
-}
+  
+    &__image {
+      position: relative;
+      min-height: 17.5rem;
+      flex: 1;
+      order: 2;
+      padding: 20px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+  
+      @include breakpoint-up(medium){
+        min-height: 25rem;
+      }
+  
+      @include breakpoint-up(large){ 
+        order: 1;
+        height: 41rem;
+      }
+    }
+  }  

@@ -841,74 +841,43 @@ button:hover::before,
 
 .aboutus {
   background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.aboutus__text {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
 }
 @media (min-width: 64em) {
-  .aboutus .container {
-    display: flex;
-    align-items: center;
+  .aboutus__text {
+    text-align: left;
   }
 }
 .aboutus__image {
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   min-height: 17.5rem;
+  flex: 1;
+  order: 2;
+  padding: 20px;
+}
+.aboutus__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 @media (min-width: 40em) {
   .aboutus__image {
     min-height: 25rem;
-    background-position: center 70%;
   }
 }
 @media (min-width: 64em) {
   .aboutus__image {
-    flex: 3;
-    order: 2;
-    height: 41rem;
-    background-image: none;
-  }
-}
-@media (min-width: 64em) {
-  .aboutus__image::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    background-image: url(/images/img_nature_wide.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    width: 120%;
-    background-size: 122%;
-    background-position: 0% 50%;
-  }
-}
-.aboutus__image::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/img_snow_wide.jpg);
-  background-size: 93%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-@media (min-width: 64em) {
-  .aboutus__image::after {
-    width: 120%;
-    height: 122%;
-    background-size: 94%;
-    background-position: center 150%;
-    left: 22%;
-  }
-}
-.aboutus__text {
-  text-align: center;
-}
-@media (min-width: 64em) {
-  .aboutus__text {
-    flex: 2;
     order: 1;
-    text-align: left;
+    height: 41rem;
   }
 }
 
